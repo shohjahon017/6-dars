@@ -1,0 +1,62 @@
+.rasm {
+  margin-top: 23px;
+  position: relative;
+}
+.hero {
+  padding-top: 105px;
+  .hero_h2 {
+    max-width: 540px;
+    position: absolute;
+    left: 389px;
+    top: 201px;
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 54px;
+    text-align: left;
+    .greener {
+      font-family: "Oswald";
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 54px;
+      text-align: left;
+      color: rgba(62, 168, 59, 1);
+    }
+  }
+  .hero_h1 {
+    font-family: "Oswald";
+    font-size: 122px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    color: rgba(62, 168, 59, 1);
+    position: absolute;
+    left: 389px;
+    top: 372px;
+  }
+  .hero_p {
+    max-width: 391px;
+    font-family: "Oswald";
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+    color: rgba(140, 140, 140, 1);
+    position: absolute;
+    left: 389px;
+    top: 550px;
+  }
+  .buynow2 {
+    @extend %buttontmpl;
+    padding: 14px 54px;
+    position: absolute;
+    left: 389px;
+    top: 652px;
+  }
+
+  .hero_rasm {
+    position: absolute;
+    left: 912px;
+    top: 774px;
+  }
+}

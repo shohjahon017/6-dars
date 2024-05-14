@@ -4,3 +4,26 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+%buttontmpl {
+  border: none;
+  width: 195px;
+  height: 56px;
+  border-radius: 43px;
+  background-color: rgba(62, 168, 59, 1);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  &:hover {
+    text-shadow: gray;
+  }
+}
+@import "./header";
+.buynow {
+  @extend %buttontmpl;
+  padding: 14px 54px;
+}
+@import "./hero";
