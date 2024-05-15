@@ -4,9 +4,13 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
 %buttontmpl {
   border: none;
-  width: 195px;
+  max-width: 250px;
   height: 56px;
   border-radius: 43px;
   background-color: rgba(62, 168, 59, 1);
@@ -17,9 +21,6 @@
   text-align: left;
   color: rgba(255, 255, 255, 1);
   cursor: pointer;
-  &:hover {
-    text-shadow: gray;
-  }
 }
 @import "./header";
 .buynow {
@@ -27,3 +28,41 @@
   padding: 14px 54px;
 }
 @import "./hero";
+@import "./main";
+.button3 {
+  @extend %buttontmpl;
+  padding: 14px 47px;
+}
+.main {
+  max-height: 497px;
+}
+.main_bottom {
+  display: flex;
+  margin-top: 209px;
+  margin-left: 389px;
+  gap: 86px;
+}
+.bottom_left {
+  display: flex;
+  gap: 21px;
+  max-width: 500px;
+  max-height: 157px;
+  .h5 {
+    max-width: 277px;
+    font-family: "Poppins";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(54, 55, 57, 1);
+    margin-bottom: 17px;
+  }
+  .p_main {
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    color: rgba(54, 55, 57, 1);
+  }
+}
